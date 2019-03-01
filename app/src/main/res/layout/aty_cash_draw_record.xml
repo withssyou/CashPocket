@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar_view"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    <LinearLayout
+    android:id="@+id/aty_ad_lord_doing_ll"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+    <TextView
+    android:id="@+id/aty_ad_lord_doing_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="未完成"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    />
+    <View
+    android:id="@+id/aty_ad_lord_doing_v"
+    android:layout_width="wrap_content"
+    android:layout_height="3dp"
+    android:background="@color/colorRed"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/aty_ad_lord_done_ll"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+    <TextView
+    android:id="@+id/aty_ad_lord_done_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="已完成"
+    android:layout_gravity="center_horizontal"/>
+    <View
+    android:id="@+id/aty_ad_lord_done_v"
+    android:layout_width="wrap_content"
+    android:layout_height="3dp"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/aty_ad_lord_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

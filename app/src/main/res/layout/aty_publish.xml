@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/aty_publish_bar"
+        layout="@layout/common_toolbar_view"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aty_publish_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/aty_publish_content_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="true"
+                android:gravity="top"
+                android:hint="想对大家说"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/aty_publish_limit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/200" />
+            </LinearLayout>
+
+            <GridView
+                    android:id="@+id/aty_publish_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:gravity="center"
+                    android:verticalSpacing="5dp">
+
+            </GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发放金额"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/aty_publish_pocket_num_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="10或10的倍数"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="元"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="15dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="红包金额"-->
+                    <!--android:textSize="20sp"/>-->
+                <!--<EditText-->
+                    <!--android:id="@+id/aty_publish_pocket_money_et"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="不低于1元"-->
+                    <!--android:gravity="right|center_vertical"-->
+                    <!--android:background="@null"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="元"-->
+                    <!--android:textSize="20sp"/>-->
+            <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/colorGray" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置范围"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/aty_publish_area_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全国"
+                    android:textSize="20sp"
+                    android:drawablePadding="5dp"
+                    android:gravity="right"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连接标题"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/aty_publish_link_title_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="不超过10个字"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:maxLength="10"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="链接地址"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/aty_publish_link_url_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请填写链接地址"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+            <Button
+                android:id="@+id/aty_publish_publish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="立即发布"
+                android:background="@drawable/shape_btn"
+                android:layout_margin="30dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

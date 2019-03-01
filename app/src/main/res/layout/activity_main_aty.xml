@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    tools:context=".ui.main.MainAty">
+    <include layout="@layout/common_toolbar_view"
+        android:visibility="gone"/>
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="481dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/main_dian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/main_dian_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/dian" />
+            <TextView
+                android:id="@+id/main_dian_txt"
+                android:padding="2dp"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="点点"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_dian_icon"
+                android:textColor="@color/colorFont"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_found"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/main_found_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/found_nomal" />
+            <TextView
+                android:id="@+id/main_found_txt"
+                android:padding="2dp"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="发现"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_found_icon"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_publish"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/main_publish_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/publish" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/main_news_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/news_nomal" />
+            <TextView
+                android:id="@+id/main_news_txt"
+                android:padding="2dp"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="消息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_news_icon"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/main_my_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/my_normal" />
+            <TextView
+                android:id="@+id/main_my_txt"
+                android:padding="2dp"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="我的"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_my_icon"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

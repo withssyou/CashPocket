@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/Content_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true" >
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="#EFDFDF"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:numColumns="4"
+                android:columnWidth="90dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center" >
+            </GridView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="(友情提示:只能添加9张图片,长按图片可以删除已添加图片)"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

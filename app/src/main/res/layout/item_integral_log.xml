@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+    <TextView
+    android:id="@+id/item_bonus_id_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="身份认证"
+    />
+    <TextView
+    android:id="@+id/item_bonus_id_date_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2018-10-11 12:12:12"
+    android:layout_below="@+id/item_bonus_id_tv"
+    android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/item_bonus_id_points_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="+10" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

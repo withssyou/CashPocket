@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <TextView
+        android:id="@+id/dialog_update_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在更新版本"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/dialog_update_current_version_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="版本说明"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:id="@+id/dialog_update_new_version_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最新版本"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:id="@+id/dialog_update_new_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布日期"
+        android:paddingTop="5dp"
+        android:visibility="invisible"/>
+    <ProgressBar
+        android:id="@+id/dialog_update_pb"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progress="30"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progressbar"/>
+    <TextView
+        android:id="@+id/dialog_update_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30%"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar_view"/>
+    <RelativeLayout
+        android:id="@+id/aty_pay_bind_ali_code_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_pay_bind">
+        <ImageView
+            android:id="@+id/aty_pay_bind_pay_code_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pay_bind"
+            android:scaleType="fitXY"
+            android:layout_margin="40dp"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击图片上传您的支付宝付款码"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/aty_pay_bind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_btn"
+        android:text="绑 定"
+        android:textColor="@color/white"/>
+</LinearLayout>

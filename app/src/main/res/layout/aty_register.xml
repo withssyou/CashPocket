@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/common_toolbar_view"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/aty_register_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/login_logo" />
+
+    <EditText
+        android:id="@+id/aty_register_phone_et"
+        style="@style/common_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aty_register_logo"
+        android:layout_marginTop="30dp"
+        android:hint="请输入手机号"
+        android:singleLine="true"/>
+    <LinearLayout
+        android:id="@+id/aty_register_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/aty_register_phone_et">
+    <EditText
+        android:id="@+id/aty_register_code_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入验证码"
+        android:layout_weight="1"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/aty_register_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_btn_code"
+        android:layout_gravity="center_vertical"
+        android:text="获取验证码"
+        android:textColor="#8A6E00"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/aty_register_pwd_et"
+        style="@style/common_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aty_register_ll"
+        android:hint="请输入6～20位密码"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/aty_register_name_et"
+        style="@style/common_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aty_register_pwd_et"
+        android:hint="请输入昵称" />
+
+    <EditText
+        android:id="@+id/aty_register_invite_et"
+        style="@style/common_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aty_register_name_et"
+        android:hint="请输入邀请人手机号码"
+        android:singleLine="true"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/aty_register_invite_et"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+        <CheckBox
+            android:id="@+id/aty_register_serve_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/aty_register_serve_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册即表示同意服务协议中的内容" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/aty_register_register_btn"
+        style="@style/common_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:text="注 册"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/login_bottom"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

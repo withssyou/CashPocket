@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_kehu_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/icon_default" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/item_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/item_kehu_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/item_kehu_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+                <RelativeLayout
+                    android:id="@+id/item_kefu_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGrayLight"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/item_kefu_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="官方回复："
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/item_kefu_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_toRightOf="@+id/item_kefu_tv"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/item_kefu_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/item_kefu_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/item_right"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/item_left"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:visibility="visible">-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toLeftOf="@+id/item_kehu_icon"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--app:cardCornerRadius="10dp">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/item_kehu_content"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="这边用来显示客户的留言"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:textSize="16sp" />-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/item_kehu_icon"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:src="@mipmap/icon_default" />-->
+        <!--</RelativeLayout>-->
+
+</LinearLayout>

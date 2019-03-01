@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_toolbar_view"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/aty_login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_logo"
+        android:layout_marginTop="50dp" />
+    <EditText
+        android:id="@+id/aty_login_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:layout_below="@id/aty_login_logo"
+        style="@style/common_edittext_style"
+        android:hint="用户名"
+        android:drawableRight="@mipmap/login_phone"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/aty_login_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aty_login_name_et"
+        style="@style/common_edittext_style"
+        android:inputType="textPassword"
+        android:hint="输入密码"
+        android:drawableRight="@mipmap/login_pwd"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/aty_login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aty_login_pwd_et"
+        android:layout_marginTop="50dp"
+        android:text="登 录"
+        android:textColor="@color/white"
+        style="@style/common_button_style"/>
+    <Button
+        android:id="@+id/aty_login_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aty_login_login_btn"
+        android:layout_marginTop="20dp"
+        android:text="注 册"
+        android:textColor="@color/colorRed"
+        style="@style/common_button_style"
+        android:background="@drawable/shape_btn_register"/>
+    <TextView
+        android:id="@+id/aty_login_forgot_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/aty_login_register_btn"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_bottom"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

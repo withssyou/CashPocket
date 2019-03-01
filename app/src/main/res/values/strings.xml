@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">点点汇</string>
+    <string name="title_dian">点点</string>
+    <string name="title_found">发现</string>
+    <string name="title_publish">发布</string>
+    <string name="title_news">消息</string>
+    <string name="title_my">我的</string>
+</resources>

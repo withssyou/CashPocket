@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ylbl.cashpocket">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+
+    <application
+        android:name=".ui.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.main.WelcomeAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.main.MainAty"/>
+        <activity android:name=".ui.main.LoginAty"/>
+        <activity android:name=".ui.main.RegisterAty"/>
+        <activity android:name=".ui.news.NewsDetailsAty"/>
+        <activity android:name=".ui.redenvelops.PocketDetailsAty"/>
+        <activity android:name=".ui.main.ForgetPwsAty"/>
+        <activity android:name=".ui.redenvelops.PublishAty"/>
+        <activity android:name=".ui.nouse.ChooseAreaAty"/>
+        <activity android:name=".ui.center.InviteAty"/>
+        <activity android:name=".ui.main.SettingAty"/>
+        <activity android:name=".ui.center.TeamSecondAty"/>
+        <activity android:name=".ui.nouse.BonusPointsAty"/>
+        <activity android:name=".ui.center.WalletAty"/>
+        <activity android:name=".ui.center.DrawCashDetailAty"/>
+        <activity android:name=".ui.center.PocketRecordAty"/>
+        <activity android:name=".ui.center.ModifyInfoAty"/>
+        <activity android:name=".ui.center.DrawCashAty"/>
+        <activity android:name=".ui.news.RulesAty"/>
+        <activity android:name=".ui.center.PayBindAty"/>
+        <activity android:name=".ui.center.DrawCashRecordAty"/>
+        <activity android:name=".ui.news.HelpCommentAty"/>
+        <activity android:name=".ui.redenvelops.PublishDoneAty"/>
+        <activity android:name=".ui.redenvelops.ShowImageAty"/>
+        <activity android:name=".ui.redenvelops.GridviewjiuActivity"/>
+        <activity android:name=".ui.redenvelops.ShowCodeAty">
+        </activity>
+        <activity android:name="com.zzti.fengyongge.imagepicker.PhotoSelectorActivity"></activity>//选择图片
+        <activity android:name="com.zzti.fengyongge.imagepicker.PhotoPreviewActivity"></activity>//预览图片
+
+        <service android:name="com.amap.api.location.APSService"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5658894f72852fe02a17b6822fbc4644">
+        </meta-data>
+    </application>
+
+</manifest>

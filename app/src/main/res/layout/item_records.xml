@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_records_icon_civ"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/item_records_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呆毛"
+        android:layout_toRightOf="@+id/item_records_icon_civ"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/item_records_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-10-12 10:10:10"
+        android:layout_alignLeft="@+id/item_records_name_tv"
+        android:layout_below="@+id/item_records_name_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/item_records_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.12元"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
