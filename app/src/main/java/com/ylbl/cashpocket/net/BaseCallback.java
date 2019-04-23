@@ -13,11 +13,7 @@ import okhttp3.Response;
 public abstract class BaseCallback extends Callback<ResultInfo> {
     @Override
     public ResultInfo parseNetworkResponse(Response response, int id) throws Exception {
-
         ResultInfo resultInfo = FastJsonUtils.toBean(response.body().string(), ResultInfo.class);
-//        if(resultInfo !=null){
-//            resultInfo.setJsonData(sb.toString());
-//        }
         return resultInfo;
     }
 }
