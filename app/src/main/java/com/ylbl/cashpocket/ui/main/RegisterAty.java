@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.ylbl.cashpocket.R;
 import com.ylbl.cashpocket.base.BaseToolBarAty;
@@ -68,7 +67,7 @@ public class RegisterAty extends BaseToolBarAty {
                            params.put("mobilePhone" , verPhone);
                     newAsyncTaskExecute(Constants.HTTP_ACTION_2 ,params );
                     //计数器
-                   new CountDownTimer(60000, 1000) {
+                   CountDownTimer countDownTimer =  new CountDownTimer(60000, 1000) {
                         @Override
                         public void onTick(long millisUntilFinished) {
                             getCode.setEnabled(false);
@@ -146,7 +145,6 @@ public class RegisterAty extends BaseToolBarAty {
                         startActivity(new Intent(context , MainAty.class));
                     }
                     finish();
-
                 }else {
                     ToastUtils.toastShort(this , "登录失败");
                 }

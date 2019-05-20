@@ -106,12 +106,6 @@ public class MainAty extends BaseToolBarAty implements View.OnClickListener{
     private static final String DOWNLOAD_NAME = "diandianhui.apk";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
-
-    @Override
     protected int getLayoutId() {
         return R.layout.activity_main_aty;
     }
